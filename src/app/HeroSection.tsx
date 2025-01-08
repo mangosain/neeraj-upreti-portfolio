@@ -27,7 +27,8 @@ export default function HeroSection() {
     if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
-    const stars = [];
+    const stars: { x: number; y: number; radius: number; speedY: number }[] =
+      [];
     const starCount = 100;
 
     canvas.width = window.innerWidth;
