@@ -17,8 +17,8 @@ function About() {
       <div className={styles.aboutText}>
         <h2>About Me</h2>
         <p>
-          My name is <strong>Neeraj Upreti</strong>. I’m a post-graduate from
-          Jamia Hamdard University in New Delhi, where I earned a degree in
+          My name is <strong>Neeraj Upreti</strong>. I&apos;m a post-graduate
+          from Jamia Hamdard University in New Delhi, where I earned a degree in
           Masters of Computer Application (MCA). I'm most passionate about
           giving back to the community, and my goal is to pursue this passion
           within the field of software engineering. In my free time, I enjoy
