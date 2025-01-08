@@ -1,0 +1,83 @@
+.skillsSection {
+    text-align: center;
+    padding: 2rem;
+}
+
+.tabContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tabButton {
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tabButton:hover {
+    background-color: #e0e0e0;
+}
+
+.activeTab {
+    background-color: #0070f3;
+    color: white;
+    border-color: #005bb5;
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.column {
+    width: 100%;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.progressBar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress {
+    background-color: #0070f3;
+    height: 100%;
+}
+
+.contactSection {
+    margin-top: 3rem;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+.buttonContainer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.actionButton {
+    padding: 0.5rem 1rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actionButton:hover {
+    background-color: #005bb5;
+}

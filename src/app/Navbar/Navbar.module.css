@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hamburger menu styling (hidden by default) */
+.navbar .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.navbar .hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+
+    /* Hide the nav links on mobile */
+    .navbar .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        /* Hidden by default */
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    /* When menu is open, display links */
+    .navbar .nav-links.open {
+        display: flex;
+        /* Show the nav-links */
+    }
+
+    /* Show the hamburger menu */
+    .navbar .hamburger {
+        display: flex;
+    }
+
+    /* Style for individual menu items */
+    .navbar .nav-links li a {
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links li a:hover {
+        background-color: #444;
+    }
+}

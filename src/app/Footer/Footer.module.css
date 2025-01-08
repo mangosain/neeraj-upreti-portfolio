@@ -1,0 +1,37 @@
+/* Footer.module.css */
+
+.footer {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+.footerText {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.emailLink {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+    color: #004080;
+}
+
+.footerBottom {
+    font-size: 14px;
+    color: #777;
+}
+
+.footerBottom span {
+    color: #4caf50;
+    font-size: 18px;
+}
