@@ -1,14 +1,24 @@
-import React from 'react';
-import './style.css'; // Import the global styles
+import React from "react";
+import "./style.css"; // Import the global styles
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  languages: { [key: string]: number } | null;
+  languages: {
+    JavaScript?: number;
+    SCSS?: number;
+    HTML?: number;
+    CSS?: number;
+  } | null;
   updated: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, languages, updated }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  description,
+  languages,
+  updated,
+}) => (
   <div className="projectCard">
     <h3 className="projectTitle">{title}</h3>
     {description && <p>{description}</p>}
@@ -34,29 +44,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, languages
 const Home: React.FC = () => {
   const projects = [
     {
-      title: 'myportfolio',
-      description: '',
+      title: "myportfolio",
+      description: "",
       languages: { JavaScript: 51.5, SCSS: 45.3, HTML: 3 },
-      updated: 'January 17, 2024',
+      updated: "January 17, 2024",
     },
     {
-      title: 'create-react-app-lambda',
-      description: 'Code yet to be deployed.',
+      title: "create-react-app-lambda",
+      description: "Code yet to be deployed.",
       languages: null,
-      updated: 'December 7, 2023',
+      updated: "December 7, 2023",
     },
     {
-      title: 'Task-Management',
+      title: "Task-Management",
       description:
-        'It is a task management system where all users can track their tasks with the status of in-progress, pending, and completed.',
+        "It is a task management system where all users can track their tasks with the status of in-progress, pending, and completed.",
       languages: { JavaScript: 78.8, CSS: 19, HTML: 2.1 },
-      updated: 'February 5, 2023',
+      updated: "February 5, 2023",
     },
     {
-      title: 'Mohd-shahid-iqbal',
-      description: 'Config files for my GitHub profile.',
+      title: "Mohd-shahid-iqbal",
+      description: "Config files for my GitHub profile.",
       languages: null,
-      updated: 'October 27, 2021',
+      updated: "October 27, 2021",
     },
   ];
 
