@@ -1,31 +1,37 @@
-import React from 'react';
-import styles from './About.module.css'; // Import the CSS module properly
+import React from "react";
+import styles from "./About.module.css"; // Import the CSS module properly
+import Image from "next/image";
 
 function About() {
-    return (
-        <>
-            <div className={styles.aboutContainer}>
-                <img 
-                    className={styles.ImageOfMohamad} 
-                    src="https://mohd-shahid-iqbal.github.io/myportfolio/static/media/shahid.c9f7e04d7825dd13872b.png" 
-                    alt="Neeraj Upreti - Profile Picture" 
-                />
+  return (
+    <section className={styles.aboutContainer}>
+      {/* Local Profile Image */}
+      <Image
+        src="/assets/profileImg.png" // Reference image from the public folder
+        alt="Neeraj Upreti - Profile Picture"
+        width={500}
+        height={500}
+        className={styles.ImageOfMohamad}
+      />
 
-                <div>
-                    <p>About Me</p>
-                    <p>
-                        My name is <strong>Neeraj Upreti</strong>. I’m a post-graduate of 2020 from Jamia Hamdard University in New Delhi with a degree in Masters of Computer Application. 
-                        I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. 
-                        In my free time, I like working on open-source projects.
-                    </p>
+      <div className={styles.aboutText}>
+        <h2>About Me</h2>
+        <p>
+          My name is <strong>Neeraj Upreti</strong>. I’m a post-graduate from
+          Jamia Hamdard University in New Delhi, where I earned a degree in
+          Masters of Computer Application (MCA). I'm most passionate about
+          giving back to the community, and my goal is to pursue this passion
+          within the field of software engineering. In my free time, I enjoy
+          contributing to open-source projects.
+        </p>
 
-                    <a href="RESUME.docx" download="RESUME.docx">
-                        <button className={styles.button}>Download Resume</button>
-                    </a>
-                </div>
-            </div>
-        </>
-    );
+        {/* Resume Download Link */}
+        <a href="/RESUME.docx" download="Neeraj_Upreti_Resume">
+          <button className={styles.button}>Download Resume</button>
+        </a>
+      </div>
+    </section>
+  );
 }
 
 export default About;
